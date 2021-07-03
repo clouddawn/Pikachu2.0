@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="zh">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>皮卡丘</title>
+    <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</head>
+<body>
+<div id="demo"></div>
+<style id="demo2"></style>
+<div id="buttons">
+    <button class="select" id="btnPause">暂停</button>
+    <button class="select" id="btnPlay">播放</button>
+    <button class="select" id="btnSlow">慢速</button>
+    <button class="select" id="btnNormal">中速</button>
+    <button class="select" id="btnFast">快速</button>
+</div>
+<style>* {box-sizing: border-box;}
+    *::before,*::after {
+        box-sizing: border-box;
+    }
+    #buttons {
+        position: fixed;
+        right: 0;
+        top: 0;
+        z-index: 10;
+        display: flex;
+        flex-direction: column;
+        margin-top: 15px;
+        margin-right: 10px;
+    }
+    #buttons > button {
+        margin-bottom: 10px;
+        padding: 4px 8px;
+    }
+    #demo {
+        position: fixed;
+        height: 50vh;
+        top: 0;
+        left: 0;
+        width: 100%;
+        padding: 10px;
+        overflow-y: auto;
+    }
+    #demo::-webkit-scrollbar {
+        display: none;
+    }
+    #html {
+        position: fixed;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 50vh;
+    }
+    .selected {
+        background-color: #f60;
+        color: white;
+        border-color: #ff6600;
+    }</style>
+<div id="html">
+    <div class="skin">
+        <div class="eye left"></div>
+        <div class="eye right"></div>
+        <div class="nose">
+            <div class="oval"></div>
+        </div>
+        <div class="face left"></div>
+        <div class="face right"></div>
+        <div class="mouth">
+            <div class="up">
+                <div class="lip left"></div>
+                <div class="lip right"></div>
+            </div>
+            <div class="down">
+                <div class="tongue"></div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="run.ee9e7b09.js"></script>
+<script src="main.20058a6a.js"></script>
+</body>
+</html>
